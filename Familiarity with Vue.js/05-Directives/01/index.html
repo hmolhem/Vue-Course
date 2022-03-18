@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3"></script>
+    <title>Directives</title>
+</head>
+<body>
+    <div id="app">
+        <h3>{{msg}}</h3>
+        <h3>{{msg1}}</h3>
+        <a href="https://vuejs.org/api/">کلیک کنید</a>
+        <p>{{msg2}}</p>
+        <ul v-for="(value, key) in builtInsDirective">
+            <li>{{value}}</li>
+        </ul>
+    </div>
+    <script src="./app/main.js"></script>
+</body>
+</html>
