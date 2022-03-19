@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3"></script>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>v-show</title>
+</head>
+<body>
+    <div id="app">
+        <h1 v-text="title"></h1>
+        <p v-if="number > 10" v-text="msg1"></p>
+        <p v-else-if="number == 10" v-text="msg2"></p>
+        <p v-else v-text="msg3"></p>
+        <p>v-show باعث میشه که display:none شود</p>
+        <h3 v-show="isOk" v-text="msg4"></h3>
+
+        <h3 v-if="display()" v-text="msg5"></h3>
+    </div>    
+    <script src="./app/main.js"></script>
+</body>
+</html>
