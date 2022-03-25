@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3"></script>
+
+    <title>List Box </title>
+</head>
+<body>
+    <div id="app">
+        <p v-text="title"></p>
+        <form>
+            <label> Select Language from listbox</label><br><br>
+            <select v-model="lang" multiple>
+                <option v-for="(item, index) in languages" :key="index">{{item}}</option>
+            </select>
+            <br><br>
+            <button type="submit" @click.prevent="selectLang()">Select Lang and display console</button>
+        </form>
+        <p v-text="lang"></p>
+    </div>
+    <script src="./app/main.js"></script>
+</body>
+</html>
