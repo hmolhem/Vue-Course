@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/vue@3"></script>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Add classes and style</title>
+    <style>
+      .myBlue{
+        background-color: blue;
+        color:white;
+      }
+      .myRed{
+        background-color: red;
+        color:aliceblue;
+      }
+
+      .mainClass{
+        padding: 10px;
+        display: inline;
+        border-radius: 5px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <h1 v-text="title"></h1>
+      <p>بر روی نام کلیک کنید. با کلیک گردن کلاس جدید اضافه می‌شود</p>
+      <p class="mainClass" :class="{myRed:flag, myBlue:!flag}" @click="this.flag = !this.flag ">حسین ملهم</p>
+    </div>
+    <script src="./app/main.js"></script>
+  </body>
+</html>
