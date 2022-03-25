@@ -10,15 +10,15 @@
 <body>
     <div id="app">
         <h1 v-text="title"></h1>
-        <div>
+        <form>
             <label>First CheckBox </label>
             <input type="checkbox" v-model="checkBox" value="ch01">
-        </div>
-        <div>
+            <br>
             <label>Second CheckBox </label>
             <input type="checkbox" v-model="checkBox" value="ch02">
-        </div>
-        <button type="submit" @click.prevent="sendCheck()">send</button>
+            <br>
+            <button type="submit" @click.prevent="sendCheck()">send</button>
+        </form>
     </div>
     <script src="./app/main.js"></script>
 </body>
