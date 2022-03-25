@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3"></script>
+    <title>Form text and textarea</title>
+</head>
+<body>
+    <div id="app">
+        <h1 v-text="title"></h1>
+        <form>
+            <div>
+                <label>Name:</label>
+                <input type="text" v-model="card.name">
+            </div>
+            <div>
+                <label>Sure Name:</label>
+                <input type="text" v-model="card.surName">
+            </div>
+            <div>
+                <label>Message:</label>
+                <input type="text" v-model="card.message">
+            </div>
+            <button type="submit" @click.prevent="submitForm()">send</button>
+        </form>
+    </div>
+    <script src="./app/main.js"></script>
+</body>
+</html>
