@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/vue@3"></script>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Add classes and style</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1 v-text="title"></h1>
+      <input type="text" v-model="name">
+      <p>Name: {{upperCase()}}</p>
+
+      <button @click="toggleActive">Change active</button>
+      <p>Active: {{isActive}}</p>
+
+      <p>Look at console, isActive and upperCase repeatly called</p>
+      <p>vuejs rerender app document for every calling method</p>
+      <p>computed just like data but have operation.</p>
+      <p>computed cash data. computed is synchrouns</p>
+      <p>wathch is asynchouns</p>
+    </div>
+    <script src="./app/main.js"></script>
+  </body>
+</html>
